@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShanuStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- for click to top button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <!-------------------------- Headers section -------------------------->
+    <section class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img style="cursor: pointer;" src="Images/logo.png" width="125px"> </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems" class="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px" style="cursor: pointer;"></a>
+                <img id="menuImg" src="Images/menu.png" class="menu-icon">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------- Cart items details -------------------------->
+   
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td >
+            <div class="cart-info">
+                <img src="Images/buy-1.jpg" >
+                <div>
+                    <p>Red Printed Tshirt</p>
+                    <small>Price: $50.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td >
+            <div class="cart-info">
+                <img src="Images/buy-2.jpg" >
+                <div>
+                    <p>Red Printed Tshirt</p>
+                    <small>Price: $75.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$75.00</td>
+        </tr>
+        <tr>
+            <td >
+            <div class="cart-info">
+                <img src="Images/buy-3.jpg" >
+                <div>
+                    <p>Red Printed Tshirt</p>
+                    <small>Price: $60.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$60.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$235.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+   
+
+    <!-- -----------------------Footer------------------------ -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png" alt="">
+                        <img src="Images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169 2020 - Shanu Store</p>
+        </div>
+
+    </section>
+
+    <div class="scrolltop float-right">
+        <abbr title="Back To Top"><i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i></i></abbr>
+
+    </div>
+
+    <!-- ---------------------------JAVASCRIPT START HERE------------------- -->
+
+    <script>
+
+        //   ---------- javaScript for backtoTop
+        mybutton = document.getElementById('myBtn');
+        window.onscroll = function () {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 150) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        //  ------------- javaScript for toggle menu
+
+        document.getElementById('MenuItems').style.maxHeight = '0px';
+        // MenuItems.style.maxHeight = '0px';
+
+        document.getElementById('menuImg').addEventListener('click', function () {
+            if (MenuItems.style.maxHeight == '0px') {
+                MenuItems.style.maxHeight = '200px';
+            }
+            else {
+                MenuItems.style.maxHeight = '0px';
+            }
+        });
+       
+    </script>
+
+</body>
+
+</html>
